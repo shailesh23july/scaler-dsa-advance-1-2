@@ -40,8 +40,6 @@ Output 2:
  1
 */
 
-
-
 public class PairSumDivisibleByM {
 	
 	public static void main(String[] args) {
