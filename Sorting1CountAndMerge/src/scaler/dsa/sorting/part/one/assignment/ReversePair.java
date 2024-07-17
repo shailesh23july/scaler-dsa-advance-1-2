@@ -80,7 +80,7 @@ public class ReversePair {
 	
 	public static int[] divideConquer(int[] arr) {
 		//Base Case
-		if (arr.length == 1) {
+		if (arr.length <= 1) {
 		  return arr;
 		}
        
@@ -108,11 +108,15 @@ public class ReversePair {
 				res[k++] = A[i];
 				i++;
 			} else {
-				res[k++] = B[j];
-				if (A[i] >= 2 * B[j]) {
-					ans += A.length - i;
+				res[k++] = B[j++];
+				//if (A[i] > 2L * B[j]) {
+				while (i < A.length && A[i] > 2L * B[j-1]) {
+					ans++;
+					i++;
 				}
-				j++;
+					//ans += A.length - i;
+				//}
+				//j++;
 			}
 		}
 		while (i < A.length) {
