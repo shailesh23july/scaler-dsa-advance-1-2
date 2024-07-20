@@ -4,7 +4,7 @@ Given an array of distinct elements, find any local minima in the array.
 Note: Local minima is a number which is smaller than its adjacent neighbours.
 arr = {3,6,1,0,9,15,8}
 arr = {21,20, 19,17,15,9,7}
-arr= {5,9,15,16,20,21}
+arr=  {5,9,15,16,20,21}
 */
 
 public class LocalMinima {
